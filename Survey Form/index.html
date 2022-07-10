@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+	  <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form" action='https://register-demo.freecodecamp.org' value="form">
+      <div>
+        <label id="name-label">Name: <input type="text" name="first-name" id="name" placeholder="Enter your name" required /></label>
+      </div>
+       <div>  
+        <label id="email-label">Email: <input type="email" name="email" id="email"  placeholder="Enter your email" required /></label>
+       </div>
+      <div>
+        <label id="number-label">Age(optional): <input type="number" name="number" id="number"  placeholder="Enter your age" min="13" max="120" /></label>
+      </div>
+      <div> 
+        <p>
+          What option describes you the best: 
+        </p>
+        <label> <select name="referrer">
+            <option value="">(Select Current Role)</option>
+            <option value="1">Student</option>
+            <option value="2">Professor</option>
+            <option value="3">Working Professional</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+          </label>
+        </div>  
+        <div>  
+        <p>Would you recommend us to your friend?</p>
+        <label><input type="radio" value="definitely" name="recommend" class="inline" />
+        Definitely</label>
+        <label><input type="radio"  value="maybe" name="recommend" class="inline" /> Maybe</label>
+        <label>
+          <input type="radio" name="recommend" value="not-sure" class="inline" required /> Not Sure
+			  </label>
+        </div> 
+        <div> 
+          <p>What is your favorite feature of freeCodeCamp?</p>
+         <label>
+          <select id="dropdown" name="favourite-features">
+            <option value="">(Select an Option)</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="4">Open Source</option>
+          </select>
+          </label>
+          </div> 
+          <div>
+            <p>
+              What you would like to see improved?
+            <span>(check all that apply)</span>
+            </p>
+            <label>
+             <input type="checkbox" class="input-checkbox" value="frontend">
+             Frontend Projects 
+            </label>
+            <label>
+             <input type="checkbox" class="input-checkbox" value="backend">
+             Backend Projects 
+            </label>
+            <label>
+             <input type="checkbox" class="input-checkbox" value="data-visualization">
+             Data Visualization 
+            </label>
+            <label>
+             <input type="checkbox" class="input-checkbox" value="Devops"> 
+             DevOps
+            </label>
+            <label>
+             <input type="checkbox" class="input-checkbox" value="MachineLearning">
+             Machine Learning 
+            </label>
+            <label>
+             <input type="checkbox" class="input-checkbox" value="Additional">
+             Additional Courses 
+            </label> 
+          </div>
+          <div>
+            <label>Any comments or suggestions?
+          <textarea name="sugesstion" rows="6" cols="30" placeholder="Enter your comments here..."></textarea>
+			  </label>
+          </div>  
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </form>
+  </body>
+</html>
